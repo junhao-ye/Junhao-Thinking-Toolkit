@@ -1,17 +1,35 @@
 # Junhao-Thinking-Toolkit
 
-一套 Agent Skill，協助釐清問題、整理材料、學習研究、檢驗假設、比較選項，以及把決策轉成行動。
+**繁體中文** · [简体中文](README.zh-CN.md) · [English](README.en.md) · [日本語](README.ja.md)
 
-保留卡茲克的 12 種核心方法，另提供材料整理、假設檢驗、逐步引導與行動規劃四個入口。依任務選一種方法，只有前一步的結果能支援下一步時才串接。
+把散亂的想法整理成可分析的問題，再用同一套 Agent Skill 學習概念、檢驗假設、比較方案或安排行動。工具箱有 12 種核心方法，以及整理材料、假設檢驗、逐步引導和行動規劃四個輕量入口。每次依任務選擇一種主要方法。
 
-## 安裝
+## 快速開始
 
-將整個 [`skills/junhao-thinking-toolkit`](skills/junhao-thinking-toolkit) 目錄複製到你的 Agent 的技能目錄。Codex 可使用 `~/.codex/skills/`。在新的對話中選用 `junhao-thinking-toolkit`。
+1. 下載儲存庫，或用 Git 複製。
 
-## 用法
+   ```sh
+   git clone https://github.com/junhao-ye/Junhao-Thinking-Toolkit.git
+   ```
 
-- 「把這些客服筆記按主題整理，列出重複問題和原始記錄。」
-- 「挑戰『降價會提高續約』的假設，指出什麼證據會改變判斷。」
-- 「我已選定方案 B。把它排成有依賴關係與里程碑的行動計畫。」
+2. 將整個 [`skills/junhao-thinking-toolkit`](skills/junhao-thinking-toolkit) 資料夾複製到你的 Agent 的技能目錄。Codex 的使用者技能目錄可用 `~/.codex/skills/`。
+3. 開啟新對話，選取或點名 `junhao-thinking-toolkit`，提供目標、材料與期望產物。
 
-方法入口、維護規格和來源對照都在技能目錄中。
+> 使用 junhao-thinking-toolkit 整理以下客服筆記。按主題分組，標出重複問題與原始記錄，最後列出最值得驗證的線索。請用繁體中文回答。
+
+## 從哪裡開始
+
+| 你想完成的事 | 可以指定的方法 |
+| --- | --- |
+| 理出頭緒或釐清真正的卡點 | 整理材料、蘇格拉底問診 |
+| 理解概念、拆解案例或查證說法 | 雙層解釋、反向拆解、事實核查 |
+| 找出方案的弱點或其他解法 | 假設檢驗、專家會診、第一性原理 |
+| 比較選項、測試未知或排出時程 | 雙向鋼人／多選項比較、最小可逆實驗、行動規劃 |
+
+完整方法索引、可複製的提示詞、安裝檢查與常見問題都在[繁體中文使用說明書](docs/user-guide.zh-TW.md)。
+
+## 檔案與來源
+
+技能路由與執行規則位於 [SKILL.md](skills/junhao-thinking-toolkit/SKILL.md)，各方法的流程位於 [references/](skills/junhao-thinking-toolkit/references)。
+
+核心方法改編自數字生命卡茲克。圖片中 10 種做法的採用方式與其他出處列於[來源與對照](skills/junhao-thinking-toolkit/SOURCES.md)。
